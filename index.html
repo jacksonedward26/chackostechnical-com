@@ -1,101 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chacko's Technical</title>
-  <meta name="description" content="Chacko's Technical">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8fafc;
-      color: #1f2937;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      padding: 20px;
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-      text-align: center;
-    }
-
-    header h2 {
-      margin: 0;
-      font-size: 22px;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: clamp(28px, 5vw, 42px);
-      margin-bottom: 12px;
-    }
-
-    main p {
-      color: #64748b;
-      font-size: 16px;
-    }
-
-    .contact {
-      margin-top: 24px;
-    }
-
-    .contact a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      padding: 16px;
-      text-align: center;
-      color: #64748b;
-      font-size: 13px;
-      border-top: 1px solid #e5e7eb;
-      background: #ffffff;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chackos Technical Services LLP — Website under maintenance</title>
+<meta name="description" content="Chackos Technical Services LLP. Our website is under maintenance. Contact us at info@chackostechnical.com.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #D3121A;
+    --ink: #191919;
+    --muted: #5f5f5f;
+    --line: #e6e6e6;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: #fff;
+    color: var(--ink);
+    font-family: 'Barlow', system-ui, sans-serif;
+    line-height: 1.55;
+    display: flex;
+    flex-direction: column;
+    border-top: 8px solid var(--red);
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+  .logo { width: min(640px, 88vw); height: auto; display: block; }
+  h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5.5vw, 3.4rem);
+    line-height: 1.1;
+    margin: 3rem 0 0.9rem;
+    letter-spacing: 0.01em;
+  }
+  .note { font-size: 1.15rem; color: var(--muted); max-width: 34ch; margin: 0; }
+  .contact {
+    margin-top: 2.6rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--line);
+    min-width: min(360px, 88vw);
+  }
+  .contact span { display: block; font-size: 0.95rem; color: var(--muted); margin-bottom: 0.2rem; }
+  .contact a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: var(--red);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+  .contact a:hover, .contact a:focus-visible { border-bottom-color: var(--red); outline: none; }
+  footer { text-align: center; padding: 1.4rem; font-size: 0.85rem; color: var(--muted); }
+</style>
 </head>
 <body>
-
-  <header>
-    <h2>Chacko's Technical</h2>
-  </header>
-
   <main>
-    <h1>Welcome</h1>
-    <p>Our website is currently under development.</p>
-
+    <img class="logo" src="logo.png" alt="Chackos Technical Services LLP">
+    <h1>Website under maintenance</h1>
+    <p class="note">We're making some updates and will be back soon.</p>
     <div class="contact">
-      <a href="mailto:info@chackostechnical.com">
-        info@chackostechnical.com
-      </a>
+      <span>Contact</span>
+      <a href="mailto:info@chackostechnical.com">info@chackostechnical.com</a>
     </div>
   </main>
-
-  <footer>
-    &copy; 2026 Chacko's Technical. All rights reserved.
-  </footer>
-
+  <footer>© <span id="y"></span> Chackos Technical Services LLP</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-```
